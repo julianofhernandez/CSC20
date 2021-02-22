@@ -4,7 +4,7 @@ import java.util.*;
 * RandomWalker is a walker class that stores it's location and can move around the room
 * 
 * @author Julian Hernandez
-* 
+* @version v1.0
 */
 public class RandomWalker {
 	private int x;
@@ -14,6 +14,8 @@ public class RandomWalker {
 	/**
 	* <p>The constructor sets all starting values to 0
 	* </p>
+	* @param None
+	* @returns None
 	*/
 	public RandomWalker() {
 		this.x = 0;
@@ -24,6 +26,8 @@ public class RandomWalker {
 	/**
 	* <p>Instructs this random walker to update its coordinates by randomly making one of the 4 possible moves (up, down, left, or right).
 	* </p>
+	* @param None
+	* @returns void
 	*/
 	public void move() {
 		Random rand = new Random();
@@ -46,6 +50,7 @@ public class RandomWalker {
 	* <p>Returns this random walker's current x-coordinate.
 	* </p>
 	* @return the walk's current x-coordinate
+	* @param none
 	*/
 	public int getX() {
 		return this.x;
@@ -55,6 +60,7 @@ public class RandomWalker {
 	* <p>Returns this random walker's current y-coordinate.
 	* </p>
 	* @return the walk's current y-coordinate
+	* @param None
 	*/
 	public int getY() {
 		return this.y;
@@ -63,7 +69,8 @@ public class RandomWalker {
 	/**
 	* <p>Returns the total steps taken
 	* </p>
-	* @return the total steps this walker has taken
+	* @return The total steps this walker has taken
+	* @param None
 	*/
 	public int getSteps() {
 		return this.steps;
