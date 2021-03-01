@@ -1,32 +1,32 @@
-publicÂ classÂ SkunkÂ extendsÂ CritterÂ {
-Â Â Â Â privateÂ intÂ moves;
-Â Â Â Â privateÂ booleanÂ hungry;
-Â Â Â Â 
-Â Â Â Â publicÂ voidÂ Skunk()Â {Â Â //Â constructor
-Â Â Â Â Â Â Â Â this.hungryÂ =Â false;
-Â Â Â Â }
-Â Â Â Â 
-Â Â Â Â publicÂ booleanÂ eat()Â {
-Â Â Â Â Â Â Â Â this.hungryÂ =Â true;
-Â Â Â Â Â Â Â Â returnÂ true;
-Â Â Â Â }
-Â Â Â Â 
-Â Â Â Â publicÂ DirectionÂ getMove()Â {
-Â Â Â Â Â Â Â Â this.moves++;
-Â Â Â Â Â Â Â Â ifÂ (this.movesÂ >=Â 3)Â {
-Â Â Â Â Â Â Â Â Â Â Â Â this.movesÂ =Â 0;
-Â Â Â Â Â Â Â Â }
-Â Â Â Â Â Â Â Â ifÂ (this.movesÂ ==Â 1Â ||Â this.movesÂ ==Â 2)Â {
-Â Â Â Â Â Â Â Â Â Â Â Â returnÂ Direction.WEST;
-Â Â Â Â Â Â Â Â }Â elseÂ ifÂ (this.hungry)Â {
-Â Â Â Â Â Â Â Â Â Â Â Â returnÂ Direction.SOUTH;
-Â Â Â Â Â Â Â Â }Â elseÂ ifÂ (!this.hungry)Â {
-Â Â Â Â Â Â Â Â Â Â Â Â returnÂ Direction.NORTH;
-Â Â Â Â Â Â Â Â }
-Â Â Â Â Â Â Â Â returnÂ Direction.CENTER;
-Â Â Â Â }
-Â Â Â Â 
-Â Â Â Â publicÂ StringÂ toString()Â {
-Â Â Â Â Â Â Â Â returnÂ "w";
-Â Â Â Â }
+public class Skunk extends Critter {
+   private int  moves;
+   private  boolean  hungry;
+
+   public  void  Skunk()  {    //  constructor
+      this.hungry  =  false;
+   }
+        
+        public  boolean  eat()  {
+                this.hungry  =  true;
+                return  true;
+        }
+        
+        public  Direction  getMove()  {
+                this.moves++;
+                if  (this.moves  >=  3)  {
+                        this.moves  =  0;
+                }
+                if  (this.moves  ==  1  ||  this.moves  ==  2)  {
+                        return  Direction.WEST;
+                }  else  if  (this.hungry)  {
+                        return  Direction.SOUTH;
+                }  else  if  (!this.hungry)  {
+                        return  Direction.NORTH;
+                }
+                return  Direction.CENTER;
+        }
+        
+        public  String  toString()  {
+                return  "w";
+        }
 }

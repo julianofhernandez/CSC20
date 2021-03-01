@@ -1,4 +1,6 @@
-public class Butterfly extends Critter {
+import java.awt.*;
+
+public class Butterfly extends Critter {
     public int moves = 0;
     public int alternator = 0;
     

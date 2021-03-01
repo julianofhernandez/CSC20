@@ -1,8 +1,8 @@
-public class Shark extends Critter {
+public�class�Shark�extends�Critter�{
     public int moves = 1;
     public int inDir = 1;
-    
-    public Direction getMove() {
+
+   public�Direction�getMove()�{
         Direction dir = Direction.CENTER;
         if (this.moves >= inDir) {
             if (this.inDir % 2 == 1) {
@@ -24,5 +24,5 @@ public class Shark extends Critter {
         }
         
         return dir;
-    }
+   }
 }
