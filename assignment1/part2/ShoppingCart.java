@@ -6,16 +6,19 @@ public class ShoppingCart {
 	private ArrayList<ItemToPurchase> cartItems;
 	private CouponCode couponCode;
 
+	// 
 	public ShoppingCart() {
 		this.customerName = "none";
 		this.currentDate = "January 1, 2020";
 		this.cartItems = new ArrayList<ItemToPurchase>();
+		this.couponCode = CouponCode.NONE;
 	}
 
 	public ShoppingCart(String name, String date) {
 		this.customerName = name;
 		this.currentDate = date;
 		this.cartItems = new ArrayList<ItemToPurchase>();
+		this.couponCode = CouponCode.NONE;
 	}
 
 	public void addItem(ItemToPurchase newItem) {
@@ -62,20 +65,19 @@ public class ShoppingCart {
 		return totalCost;
 	}
 
-	public int applyCouponCode() {
-		if (this.getCostOfCart() > 150.0) {
+	public void applyCouponCode(String code) {
+		if (code.equals("OFF30") && this.getCostOfCart() > 150) {
 			this.couponCode = CouponCode.OFF30;
-			return 30;
-		} else if (this.getCostOfCart() > 100.0) {
+			System.out.println("APPLIED COUPON");
+		} else if (code.equals("OFF20") && this.getCostOfCart() > 100) {
 			this.couponCode = CouponCode.OFF20;
-			return 20;
-		} else if (this.getCostOfCart() > 50) {
+			System.out.println("APPLIED COUPON");
+		} else if (code.equals("OFF10") && this.getCostOfCart() > 50) {
 			this.couponCode = CouponCode.OFF10;
-			return 10;
+			System.out.println("APPLIED COUPON");
 		} else {
-			// No coupon can by applied
+			System.out.println("INVALID CODE");
 			this.couponCode = CouponCode.NONE;
-			return 0;
 		}
 	}
 
@@ -83,15 +85,22 @@ public class ShoppingCart {
 		if (this.cartItems.size() == 0) {
 			System.out.println("SHOPPING CART IS EMPTY");
 			return;
-		} else if (!(this.couponCode == CouponCode.OFF30 || this.couponCode == CouponCode.OFF20 || this.couponCode == CouponCode.OFF10)) {
-			System.out.println("INVALID CODE");
 		}
 		System.out.println(this.customerName + "'s Shopping Cart - " + this.currentDate);
 		System.out.println("Number of Items: " + this.cartItems.size() + "\n");
 		for(int i=0; i<this.cartItems.size(); i++) {
 			this.cartItems.get(i).printItemCost();
 		}
-		int discount = this.applyCouponCode();
+		int discount = 0;
+		if (this.couponCode == CouponCode.OFF30) {
+			discount = 30;
+		}
+		if (this.couponCode == CouponCode.OFF20) {
+			discount = 30;
+		}
+		if (this.couponCode == CouponCode.OFF10) {
+			discount = 10;
+		}
 		System.out.println("Discount (" + this.couponCode + "): -$" + discount);
 		System.out.printf("Total: $%.2f", (this.getCostOfCart() - discount));
 	}

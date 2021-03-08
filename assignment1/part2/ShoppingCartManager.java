@@ -99,13 +99,17 @@ public class ShoppingCartManager {
 		item.setName(input());
 		println("Enter the new quantity: ");
 		int quantity = inputInt();
+		item.setQuantity(quantity);
 		cart.modifyItem(item);
 		println();
 		return cart;
 	}
 
 	public static ShoppingCart applyCouponCode(ShoppingCart cart) {
-		cart.applyCouponCode();
+		println("CHANGE ITEM QUANTITY");
+		println("Enter Coupon Code: ");
+		String code = input();
+		cart.applyCouponCode(code);
 		println();
 		return cart;
 	}
