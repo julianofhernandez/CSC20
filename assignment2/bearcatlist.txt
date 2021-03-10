@@ -1,0 +1,16 @@
+Bearcat
+Pearce Skinner 250000 1 12 2 0 0 3 7 
+Noah Lawrence 240000 2 4 2 0 0 2 10 
+Darryn Commissong 270000 3 19 3 1 1 7 2 
+Mads Tranberg 100000 4 0 4 1 1 10 1 
+Sean Clarke 100000 5 6 4 2 1 8 9 
+Peyton Mowery 400000 6 20 2 1 0 12 13 
+Elias Helbig 350000 7 15 0 2 1 10 11 
+Cameron Panley 100000 8 4 4 2 1 10 4 
+Mohamed Elmardi 260000 9 10 3 1 1 7 5 
+Daniel Oginni 260000 10 8 3 2 0 2 9 
+Austin Smythe 260000 11 8 2 0 2 2 9 
+Ryan Melink 265000 12 14 2 0 1 4 3 
+Logan Ecklar 350000 13 27 2 0 0 15 18 
+Mason Volker 240000 13 8 3 0 2 10 0 
+Aerin West 240000 14 10 4 5 1 7 9 
