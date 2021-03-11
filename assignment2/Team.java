@@ -24,6 +24,14 @@ public class Team {
         return this.team;
     }
 
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public void setTeam(ArrayList<Player> team) {
+        this.team = team;
+    }
+
     // +add(Object o)	Adds the object to array list
     public void add(Object o) {
         Player object = (Player)o;

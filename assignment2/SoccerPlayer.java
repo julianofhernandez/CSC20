@@ -6,13 +6,14 @@ public class SoccerPlayer extends Player {
     private int offside;
     private int assist;
 
-    public SoccerPlayer(String name, double salary, int number, int three, int turnover, int redCard, int   rebound, int two, String team) {
+    public SoccerPlayer(String name, double salary, int number, int goals, int fouls, int redCard, int yellowCard, int offside, int assist) {
         super(name, salary, number);
         this.goals = goals;
         this.fouls = fouls;
         this.redCard = redCard;
         this.yellowCard = yellowCard;
         this.offside = offside;
+        this.assist = assist;
     }
 
     public int getGoals() {
@@ -67,15 +68,16 @@ public class SoccerPlayer extends Player {
 
     /* +equalsMethod accepts an object as its parameter */
     public boolean equals(Object other) {
-        SoccerPlayer other = (SoccerPlayer)otherPlayer;
+        SoccerPlayer otherPlayer = (SoccerPlayer)other;
         // Checks only if the names are the same
-        if (this.name.equals(otherPlayer.getname())) {
+        if (this.getName().equals(otherPlayer.getName())) {
             return true;
         } else {
             return false;
         }
     }
 
+    /* Returns true or false based on whether the player should be removed from the game*/
     public Boolean pullOutPlayer() {
         if (this.fouls > 3 || this.yellowCard > 2) {
             return false;

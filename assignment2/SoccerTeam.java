@@ -1,11 +1,34 @@
 import java.util.*;
+import java.io.*;
 
-public class SoccerTeam {
+public class SoccerTeam extends Team {
+    // private ArrayLisst<SoccerPlayers> soccerTeam;
     /* +constructor()	Reads the info for the players from a file and creates an object of 
     SoccerPlayer and then stores it in the  arrayList called team. Then call super constructor 
     and pass team name and array list.*/
-    public SoccerTeam(String fileName) {
-
+    public SoccerTeam(String fileName) throws FileNotFoundException {
+        super("", new ArrayList<Player>());
+        File fileObj = new File(fileName);
+        Scanner reader = new Scanner(fileObj);
+        String teamName = reader.next();
+        this.setTeamName(teamName);
+        while (reader.hasNext()) {
+            String firstName = reader.next();
+            String lastName = reader.next();
+            String name = firstName + lastName;
+            int salary = Integer.parseInt(reader.next());
+            int number = Integer.parseInt(reader.next());
+            int fouls = Integer.parseInt(reader.next());
+            int goals = Integer.parseInt(reader.next());
+            int redCard = Integer.parseInt(reader.next());
+            int yellowCard = Integer.parseInt(reader.next());
+            int offside = Integer.parseInt(reader.next());
+            int assist = Integer.parseInt(reader.next());
+            SoccerPlayer addingPlayer = new SoccerPlayer(
+                name, salary, number, fouls, goals, redCard, yellowCard, offside, assist
+            );
+            this.add(addingPlayer);
+        }
     }
 
     /* +add(Object o) */
@@ -32,30 +55,36 @@ public class SoccerTeam {
     public SoccerPlayer selectTheBest() {
         // Loops through the players to find the one with the highest score
         int highestIndex = 0;
-        int highest = this.team.get(highestIndex).getGoals()
-        for (int i=0; i<this.team.size(); i++) {
+        SoccerPlayer player0 = (SoccerPlayer)this.getTeam().get(highestIndex);
+        int highest = player0.getGoals();
+        for (int i=0; i<this.getTeam().size(); i++) {
+            SoccerPlayer player = (SoccerPlayer)this.getTeam().get(i);
             // Check if this player has a higher score
-            if (this.team.get(i).getGoals() > highest) {
-                highest = this.team.get(i).getGoals();
+            if (player.getGoals() > highest) {
+                highest = player.getGoals();
                 highestIndex = i;
             }
         }
-        return this.team.get(highestIndex);
+        SoccerPlayer bestPlayer = (SoccerPlayer)this.getTeam().get(highestIndex);
+        return bestPlayer;
     }
 
     /* +selectMostRed	Returns the player with the most red card */
     public SoccerPlayer selectMostRed() {
         // Loops through the players to find the one with the most red cards
         int highestIndex = 0;
-        int highest = this.team.get(highestIndex).getRedCard()
-        for (int i=0; i<this.team.size(); i++) {
+        SoccerPlayer player0 = (SoccerPlayer)this.getTeam().get(highestIndex);
+        int highest = player0.getRedCard();
+        for (int i=0; i<this.getTeam().size(); i++) {
             // Check if player has a higher amount of redcards
-            if (this.team.get(i).getRedCard() > highest) {
-                highest = this.team.get(i).getRedCard();
+            SoccerPlayer player = (SoccerPlayer)this.getTeam().get(i);
+            if (player.getRedCard() > highest) {
+                highest = player.getRedCard();
                 highestIndex = i;
             }
         }
-        return this.team.get(highestIndex);
+        SoccerPlayer mostRedPlayer = (SoccerPlayer)this.getTeam().get(highestIndex);
+        return mostRedPlayer;
     }
 }
 
