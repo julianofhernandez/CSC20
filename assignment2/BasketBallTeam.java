@@ -14,7 +14,7 @@ public class BasketBallTeam extends Team{
         while (reader.hasNext()) {
             String firstName = reader.next();
             String lastName = reader.next();
-            String name = firstName + lastName;
+            String name = firstName + " " + lastName;
             int salary = Integer.parseInt(reader.next());
             int number = Integer.parseInt(reader.next());
             int threePointer = Integer.parseInt(reader.next());
@@ -56,7 +56,7 @@ public class BasketBallTeam extends Team{
         BasketBallPlayer player0 = (BasketBallPlayer)this.getTeam().get(highestIndex);
         int highest = player0.getTotalPoints();
         for (int i=0; i<this.getTeam().size(); i++) {
-            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(highestIndex);
+            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(i);
             // Check if this player has a higher score
             if (player.getTotalPoints() > highest) {
                 highest = player.getTotalPoints();
@@ -74,7 +74,7 @@ public class BasketBallTeam extends Team{
         BasketBallPlayer player0 = (BasketBallPlayer)this.getTeam().get(lowestIndex);
         int lowest = player0.getTotalPoints();
         for (int i=0; i<this.getTeam().size(); i++) {
-            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(lowestIndex);
+            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(i);
             // Check if this player has a higher score
             if (player.getTotalPoints() < lowest) {
                 lowest = player.getTotalPoints();
@@ -92,7 +92,7 @@ public class BasketBallTeam extends Team{
         BasketBallPlayer player0 = (BasketBallPlayer)this.getTeam().get(highestIndex);
         int highest = player0.getRebounds();
         for (int i=0; i<this.getTeam().size(); i++) {
-            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(highestIndex);
+            BasketBallPlayer player = (BasketBallPlayer)this.getTeam().get(i);
             // Check if player has a higher amount of redcards
             if (player.getRebounds() > highest) {
                 highest = player.getRebounds();

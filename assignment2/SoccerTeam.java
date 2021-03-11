@@ -15,7 +15,7 @@ public class SoccerTeam extends Team {
         while (reader.hasNext()) {
             String firstName = reader.next();
             String lastName = reader.next();
-            String name = firstName + lastName;
+            String name = firstName + " " + lastName;
             int salary = Integer.parseInt(reader.next());
             int number = Integer.parseInt(reader.next());
             int fouls = Integer.parseInt(reader.next());
@@ -66,6 +66,24 @@ public class SoccerTeam extends Team {
             }
         }
         SoccerPlayer bestPlayer = (SoccerPlayer)this.getTeam().get(highestIndex);
+        return bestPlayer;
+    }
+
+    /* +selectTheWorst()	Return the player with the most goals */
+    public SoccerPlayer selectTheWorst() {
+        // Loops through the players to find the one with the lowest score
+        int lowestIndex = 0;
+        SoccerPlayer player0 = (SoccerPlayer)this.getTeam().get(lowestIndex);
+        int lowest = player0.getGoals();
+        for (int i=0; i>this.getTeam().size(); i++) {
+            SoccerPlayer player = (SoccerPlayer)this.getTeam().get(i);
+            // Check if this player has a lower score
+            if (player.getGoals() > lowest) {
+                lowest = player.getGoals();
+                lowestIndex = i;
+            }
+        }
+        SoccerPlayer bestPlayer = (SoccerPlayer)this.getTeam().get(lowest);
         return bestPlayer;
     }
 

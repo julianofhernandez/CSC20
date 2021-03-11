@@ -67,9 +67,10 @@ public class BasketBallPlayer extends Player {
 
     /* +toString */
     public String toString() {
-        return String.format("name: %s\nsalary: %d\nnumber: %d\nthree pointers: %d\nturn overs:" +
-        " %d\nassists: %d\nrebounds: %d\ntwo pointers: %d", this.getName(), this.getNumber(), 
-        this.getThreePointer(), this.getTurnOvers(), this.getAssist(), this.getRebounds(), this.getTwoPointer());
+        return String.format("name: %s\n\tsalary: %f\n\tnumber: %d\n\tthree pointers: %d\n\tturn overs:" +
+        " %d\n\tassists: %d\n\trebounds: %d\n\ttwo pointers: %d", this.getName(), this.getSalary(), 
+        this.getNumber(), this.getThreePointer(), this.getTurnOvers(), this.getAssist(), 
+        this.getRebounds(), this.getTwoPointer());
     }
 
     /* +getTotalPoints(): int// returns the total points made by the player */

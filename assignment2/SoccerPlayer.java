@@ -64,7 +64,13 @@ public class SoccerPlayer extends Player {
         this.assist = assist;
     }
 
-    // +toString method
+    /* +toString */
+    public String toString() {
+        return String.format("name: %s\n\tsalary: %f\n\tnumber: %d\n\tgoals: %d\n\tfouls:" +
+        " %d\n\tred cards: %d\n\tyellow cards: %d\n\toffside: %d\n\tassist: %d", this.getName(), 
+        this.getSalary(), this.getNumber(), this.getGoals(), this.getFouls(), 
+        this.getRedCard(), this.getYellowCard(), this.getOffside(), this.getAssist());
+    }
 
     /* +equalsMethod accepts an object as its parameter */
     public boolean equals(Object other) {

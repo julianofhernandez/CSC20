@@ -42,5 +42,9 @@ public class Player {
         }
     }
 
-    //! tostring method
+    /* +toString */
+    public String toString() {
+        return String.format("name: %s\n\tsalary: %f\n\tnumber: %d\n", this.getName(), 
+        this.getSalary(), this.getNumber());
+    }
 }
