@@ -3,7 +3,7 @@ public class BasketBallPlayer extends Player {
     private int turnOvers;
     private int assist;
     private int rebounds;
-    private int twoPointers;
+    private int twoPointer;
 
     public BasketBallPlayer(String name, double salary, int number, int three, int turnover, int assist, int   rebound, int two, String team) {
         super(name, salary, number);
@@ -11,7 +11,7 @@ public class BasketBallPlayer extends Player {
         this.turnOvers = turnOvers;
         this.assist = assist;
         this.rebounds = rebounds;
-        this.twoPointers = twoPointers;
+        this.twoPointer = twoPointer;
     }
 
     public int getthreePointer() {
@@ -46,12 +46,12 @@ public class BasketBallPlayer extends Player {
         this.rebounds = rebounds;
     }
 
-    public int getTwoPointers() {
-        return this.twoPointers;
+    public int getTwoPointer() {
+        return this.twoPointer;
     }
 
-    public void setTwoPointers(int twoPointers) {
-        this.twoPointers = twoPointers;
+    public void setTwoPointer(int twoPointer) {
+        this.twoPointer = twoPointer;
     }
 
     public boolean equals(Object other) {
@@ -60,5 +60,7 @@ public class BasketBallPlayer extends Player {
     }
 // +toString
 // +getTotalPoints(): int// returns the total points made by the player
-
+    public int getTotalPoints() {
+        return this.threePointer*3 + this.twoPointer*2;
+    }
 }

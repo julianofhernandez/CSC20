@@ -63,9 +63,18 @@ public class SoccerPlayer extends Player {
         this.assist = assist;
     }
 
-
     // +toString method
-    // +equalsMethod// accepts an object as its parameter
+
+    /* +equalsMethod accepts an object as its parameter */
+    public boolean equals(Object other) {
+        SoccerPlayer other = (SoccerPlayer)otherPlayer;
+        // Checks only if the names are the same
+        if (this.name.equals(otherPlayer.getname())) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     public Boolean pullOutPlayer() {
         if (this.fouls > 3 || this.yellowCard > 2) {
