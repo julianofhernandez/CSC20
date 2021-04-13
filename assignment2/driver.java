@@ -1,22 +1,40 @@
+//************************************************
+//author: Julian Hernandez
+//date: 2/12/21
+//title: Assignment 2
+//description: Soccer and Basketball teams
+//**************************************************
+
 import java.util.*;
 import java.io.*;
 
+/**
+* Driver class contains how entry point as well as the logic for each of the seven steps
+* @author Julian Hernandez
+* @version v1.0
+*/
 public class driver {
+    /** This is our entry point, where all the logic is called from
+     * @param args are the commandline arguments, none needed for this file
+     * @throws FileNotFoundException This is due to opening a scanner on a file
+    */
     public static void main(String[] args) throws FileNotFoundException {
         SoccerTeam bearCat = new SoccerTeam("bearcatlist.txt");
         BasketBallTeam kings = new BasketBallTeam("kingslist.txt");
         println("Step 1");
-        // listPlayers(kings.getTeam());
-        // listPlayers(bearCat.getTeam());
+        println("Kings players: ");
+        listPlayers(kings.getTeam());
+        println("Bearcat players: ");
+        listPlayers(bearCat.getTeam());
         println("Step 2");
         ArrayList<SoccerPlayer> soccerPlayers = new ArrayList<SoccerPlayer>();
         for (int i = 0; i< bearCat.getTeam().size(); i++) {
             SoccerPlayer player = (SoccerPlayer)bearCat.getTeam().get(i);
             soccerPlayers.add(player);
         }
-        // listAllPlayersWithFouls(soccerPlayers);
+        listAllPlayersWithFouls(soccerPlayers);
         println("Step 3");
-        // mostRebound(kings);
+        mostRebound(kings);
         println("Step 4");
         searchPlayer(kings.getTeam(), "Garret Temple");
         searchPlayer(bearCat.getTeam(), "Julian Hernandez");
@@ -29,17 +47,24 @@ public class driver {
         println("Step 7");
         kings = removePlayer(kings);
         bearCat = removePlayer(bearCat);
+        println("Kings players: ");
+        listPlayers(kings.getTeam());
+        println("Bearcat players: ");
+        listPlayers(bearCat.getTeam());
     }
 
-    /* this methods accepts an arraylist of players and displays the info about all the players. 
-    Call this method two times using the object kings and bearCat. You must use the same method */
+    /** this methods accepts an arraylist of players and displays the info about all the players. 
+    * Call this method two times using the object kings and bearCat. You must use the same method 
+    * @param players are the players you want to print out*/
     public static void listPlayers(ArrayList<Player> players) {
         for (int i=0; i<players.size(); i++) {
             print(players.get(i).toString());
         }
     }
 
-    /* a method that accepts an array of SoccerPlayer and lists all the players with fouls. */
+    /** a method that accepts an array of SoccerPlayer and lists all the players with fouls. 
+     * @param players Accepts the list of SoccerPlayers to check for fouls
+    */
     public static void listAllPlayersWithFouls(ArrayList<SoccerPlayer> players) {
         for (int i = 0; i< players.size(); i++) {
             if (players.get(i).getFouls() != 0) {
@@ -48,14 +73,20 @@ public class driver {
         }
     }
 
-    /* a method called mostRebound that displays the player with the most rebound */
+    /** a method called mostRebound that displays the player with the most rebound 
+     * @param team The basketballteam to search through
+    */
     public static void mostRebound(BasketBallTeam team) {
         println(team.selectMostRebounds().toString());
     }
 
-    /* a method called searchPlayer that accepts an arraylist of type Player and a name of a player. 
-    This method searches the list, if the player is found display the info, otherwise print a message 
-    that the player does not exist. It returns the integer of that player or -1 if not found.*/
+    /** a method called searchPlayer that accepts an arraylist of type Player and a name of a player. 
+    * This method searches the list, if the player is found display the info, otherwise print a message 
+    * that the player does not exist. It returns the integer of that player or -1 if not found.
+    * @param players A list of players to search through
+    * @param name The name to search for
+    * @return The index of where this player is found
+    */
     public static int searchPlayer(ArrayList<Player> players, String name) {
         for (int i = 0; i< players.size(); i++) {
             if (players.get(i).getName().equals(name)) {
@@ -67,21 +98,27 @@ public class driver {
         return -1;
     }
 
-    /* a method that display the best player with the most goals*/
+    /** a method that display the best player with the most goals
+     * @param team The team to search through
+    */
     public static void bestPlayerMostGoals(SoccerTeam team) {
         println(team.selectTheBest().toString());
     }
 
-    /* a method that display the best player with the most points */
+    /** a method that display the best player with the most points 
+     * @param team the team to search through
+    */
     public static void bestPlayerMostGoals(BasketBallTeam team) {
         println(team.selectTheBest().toString());
     }
 
-    /* a method that takes the team name as parameter and simulates series of 10 games and each game is a
-    random play. For each game, you need to generate a random number, if the random number is bigger than 
-    0.5.its a win; otherwise the team loses a game. This method prints the number of wins and losses of
-     each team. Call this method twice, once by passing in “Bear Cat” as team name and other for passing 
-     in “Kings” as the team name from the main method. */
+    /** a method that takes the team name as parameter and simulates series of 10 games and each game is a
+    * random play. For each game, you need to generate a random number, if the random number is bigger than 
+    * 0.5.its a win; otherwise the team loses a game. This method prints the number of wins and losses of
+    * each team. Call this method twice, once by passing in “Bear Cat” as team name and other for passing 
+    * in “Kings” as the team name from the main method. 
+    * @param teamName The teamname that we want to simulate
+    */
     public static void playGames(String teamName) {
         Random rand = new Random();
         int games = 10;
@@ -97,9 +134,13 @@ public class driver {
         println(teamName + " won " + wins + " times and lost " + losses + " times");
     }
 
-    /* a method that removes a player with most red cards(Soccer) / least points(Basketball)and adds a 
-    new player in his place. */
+    /** a method that removes a player with the least points(Basketball)and adds a 
+    * new player in his place. 
+    * @param team The team to remove the player from
+    * @return returns the @param team but edited to have the player removed
+    */
     public static BasketBallTeam removePlayer(BasketBallTeam team) {
+        println("Removing player:");
         int worstPlayerIndex = (searchPlayer(team.getTeam(),team.selectTheWorst().getName()));
         team.remove(worstPlayerIndex);
         BasketBallPlayer newGuy = new BasketBallPlayer("Bill Clinton", 107000.00, 
@@ -107,8 +148,14 @@ public class driver {
         team.add(newGuy, worstPlayerIndex);
         return team;
     }
-
+    
+    /** a method that removes a player with most red cards(Soccer) and adds a 
+    * new player in his place.
+    * @param team The team to remove the player from
+    * @return returns the @param team but edited to have the player removed
+    */
     public static SoccerTeam removePlayer(SoccerTeam team) {
+        println("Removing player:");
         int worstPlayerIndex = (searchPlayer(team.getTeam(),team.selectMostRed().getName()));
         team.remove(worstPlayerIndex);
         SoccerPlayer newGuy = new SoccerPlayer("Geoffnet die Tur", 50000.00, 
@@ -117,10 +164,16 @@ public class driver {
         return team;
     }
 
+    /** This is just to simplify the printing process 
+     * @param str String to print
+    */
     public static void print(String str) {
         System.out.println(str);
     }
 
+    /**This is just to simplify the println process 
+     * @param str String to print
+    */
     public static void println(String str) {
         System.out.println(str+"\n");
     }

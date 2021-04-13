@@ -1,0 +1,5 @@
+Nestle,1,candy
+Smithfield foods,12,cheese
+Pepsi,20,drink mixes
+Mars,6,candy
+General Mills,3,baking products

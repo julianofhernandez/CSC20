@@ -1,0 +1,737 @@
+Step 1
+
+Kings players: 
+
+name: Bogdan Bogdanovic
+	salary: 9412280.000000
+	number: 8
+	three pointers: 2
+	turn overs: 2
+	assists: 3
+	rebounds: 3
+	two pointers: 3
+name: Bruno Cabocio
+	salary: 2541255.000000
+	number: 22
+	three pointers: 3
+	turn overs: 0
+	assists: 0
+	rebounds: 2
+	two pointers: 1
+name: Vince Carter
+	salary: 8000000.000000
+	number: 15
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 1
+	two pointers: 0
+name: Willie Cauley-Stein
+	salary: 3704160.000000
+	number: 0
+	three pointers: 0
+	turn overs: 2
+	assists: 3
+	rebounds: 7
+	two pointers: 5
+name: De'Aaron Fox
+	salary: 4609200.000000
+	number: 5
+	three pointers: 1
+	turn overs: 2
+	assists: 4
+	rebounds: 3
+	two pointers: 4
+name: Harry Giles
+	salary: 1859400.000000
+	number: 20
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 2
+name: Nigel Hayes
+	salary: 55296.000000
+	number: 40
+	three pointers: 0
+	turn overs: 0
+	assists: 2
+	rebounds: 4
+	two pointers: 1
+name: Buddy Heild
+	salary: 3675480.000000
+	number: 24
+	three pointers: 2
+	turn overs: 2
+	assists: 2
+	rebounds: 4
+	two pointers: 3
+name: Justin Jackson
+	salary: 2365560.000000
+	number: 25
+	three pointers: 1
+	turn overs: 1
+	assists: 1
+	rebounds: 3
+	two pointers: 2
+name: Kosta Koufos
+	salary: 8393000.000000
+	number: 41
+	three pointers: 0
+	turn overs: 0
+	assists: 1
+	rebounds: 7
+	two pointers: 2
+name: Skal Labissiere
+	salary: 1312611.000000
+	number: 7
+	three pointers: 0
+	turn overs: 4
+	assists: 1
+	rebounds: 5
+	two pointers: 3
+name: Frank MasonIII
+	salary: 1184385.000000
+	number: 10
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 2
+name: Zach Randolph
+	salary: 12307692.000000
+	number: 50
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 5
+name: Iman Shumpert
+	salary: 10337079.000000
+	number: 9
+	three pointers: 0
+	turn overs: 1
+	assists: 1
+	rebounds: 1
+	two pointers: 2
+name: Garret Temple
+	salary: 17.000000
+	number: 8000000
+	three pointers: 1
+	turn overs: 1
+	assists: 2
+	rebounds: 2
+	two pointers: 2
+Bearcat players: 
+
+name: Pearce Skinner
+	salary: 250000.000000
+	number: 1
+	goals: 12
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 3
+	assist: 7
+name: Noah Lawrence
+	salary: 240000.000000
+	number: 2
+	goals: 4
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 2
+	assist: 10
+name: Darryn Commissong
+	salary: 270000.000000
+	number: 3
+	goals: 19
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 2
+name: Mads Tranberg
+	salary: 100000.000000
+	number: 4
+	goals: 0
+	fouls: 4
+	red cards: 1
+	yellow cards: 1
+	offside: 10
+	assist: 1
+name: Sean Clarke
+	salary: 100000.000000
+	number: 5
+	goals: 6
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 8
+	assist: 9
+name: Peyton Mowery
+	salary: 400000.000000
+	number: 6
+	goals: 20
+	fouls: 2
+	red cards: 1
+	yellow cards: 0
+	offside: 12
+	assist: 13
+name: Elias Helbig
+	salary: 350000.000000
+	number: 7
+	goals: 15
+	fouls: 0
+	red cards: 2
+	yellow cards: 1
+	offside: 10
+	assist: 11
+name: Cameron Panley
+	salary: 100000.000000
+	number: 8
+	goals: 4
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 10
+	assist: 4
+name: Mohamed Elmardi
+	salary: 260000.000000
+	number: 9
+	goals: 10
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 5
+name: Daniel Oginni
+	salary: 260000.000000
+	number: 10
+	goals: 8
+	fouls: 3
+	red cards: 2
+	yellow cards: 0
+	offside: 2
+	assist: 9
+name: Austin Smythe
+	salary: 260000.000000
+	number: 11
+	goals: 8
+	fouls: 2
+	red cards: 0
+	yellow cards: 2
+	offside: 2
+	assist: 9
+name: Ryan Melink
+	salary: 265000.000000
+	number: 12
+	goals: 14
+	fouls: 2
+	red cards: 0
+	yellow cards: 1
+	offside: 4
+	assist: 3
+name: Logan Ecklar
+	salary: 350000.000000
+	number: 13
+	goals: 27
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 15
+	assist: 18
+name: Mason Volker
+	salary: 240000.000000
+	number: 13
+	goals: 8
+	fouls: 3
+	red cards: 0
+	yellow cards: 2
+	offside: 10
+	assist: 0
+name: Aerin West
+	salary: 240000.000000
+	number: 14
+	goals: 10
+	fouls: 4
+	red cards: 5
+	yellow cards: 1
+	offside: 7
+	assist: 9
+Step 2
+
+name: Pearce Skinner
+	salary: 250000.000000
+	number: 1
+	goals: 12
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 3
+	assist: 7
+
+name: Noah Lawrence
+	salary: 240000.000000
+	number: 2
+	goals: 4
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 2
+	assist: 10
+
+name: Darryn Commissong
+	salary: 270000.000000
+	number: 3
+	goals: 19
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 2
+
+name: Mads Tranberg
+	salary: 100000.000000
+	number: 4
+	goals: 0
+	fouls: 4
+	red cards: 1
+	yellow cards: 1
+	offside: 10
+	assist: 1
+
+name: Sean Clarke
+	salary: 100000.000000
+	number: 5
+	goals: 6
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 8
+	assist: 9
+
+name: Peyton Mowery
+	salary: 400000.000000
+	number: 6
+	goals: 20
+	fouls: 2
+	red cards: 1
+	yellow cards: 0
+	offside: 12
+	assist: 13
+
+name: Cameron Panley
+	salary: 100000.000000
+	number: 8
+	goals: 4
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 10
+	assist: 4
+
+name: Mohamed Elmardi
+	salary: 260000.000000
+	number: 9
+	goals: 10
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 5
+
+name: Daniel Oginni
+	salary: 260000.000000
+	number: 10
+	goals: 8
+	fouls: 3
+	red cards: 2
+	yellow cards: 0
+	offside: 2
+	assist: 9
+
+name: Austin Smythe
+	salary: 260000.000000
+	number: 11
+	goals: 8
+	fouls: 2
+	red cards: 0
+	yellow cards: 2
+	offside: 2
+	assist: 9
+
+name: Ryan Melink
+	salary: 265000.000000
+	number: 12
+	goals: 14
+	fouls: 2
+	red cards: 0
+	yellow cards: 1
+	offside: 4
+	assist: 3
+
+name: Logan Ecklar
+	salary: 350000.000000
+	number: 13
+	goals: 27
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 15
+	assist: 18
+
+name: Mason Volker
+	salary: 240000.000000
+	number: 13
+	goals: 8
+	fouls: 3
+	red cards: 0
+	yellow cards: 2
+	offside: 10
+	assist: 0
+
+name: Aerin West
+	salary: 240000.000000
+	number: 14
+	goals: 10
+	fouls: 4
+	red cards: 5
+	yellow cards: 1
+	offside: 7
+	assist: 9
+
+Step 3
+
+name: Willie Cauley-Stein
+	salary: 3704160.000000
+	number: 0
+	three pointers: 0
+	turn overs: 2
+	assists: 3
+	rebounds: 7
+	two pointers: 5
+
+Step 4
+
+name: Garret Temple
+	salary: 17.000000
+	number: 8000000
+	three pointers: 1
+	turn overs: 1
+	assists: 2
+	rebounds: 2
+	two pointers: 2
+
+Player does not exist.
+Step 5
+
+name: Zach Randolph
+	salary: 12307692.000000
+	number: 50
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 5
+
+name: Logan Ecklar
+	salary: 350000.000000
+	number: 13
+	goals: 27
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 15
+	assist: 18
+
+Step 6
+
+Bear Cat won 3 times and lost 7 times
+
+Kings won 3 times and lost 7 times
+
+Step 7
+
+Removing player:
+
+name: Nigel Hayes
+	salary: 55296.000000
+	number: 40
+	three pointers: 0
+	turn overs: 0
+	assists: 2
+	rebounds: 4
+	two pointers: 1
+
+Removing player:
+
+name: Aerin West
+	salary: 240000.000000
+	number: 14
+	goals: 10
+	fouls: 4
+	red cards: 5
+	yellow cards: 1
+	offside: 7
+	assist: 9
+
+Kings players: 
+
+name: Bogdan Bogdanovic
+	salary: 9412280.000000
+	number: 8
+	three pointers: 2
+	turn overs: 2
+	assists: 3
+	rebounds: 3
+	two pointers: 3
+name: Bruno Cabocio
+	salary: 2541255.000000
+	number: 22
+	three pointers: 3
+	turn overs: 0
+	assists: 0
+	rebounds: 2
+	two pointers: 1
+name: Vince Carter
+	salary: 8000000.000000
+	number: 15
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 1
+	two pointers: 0
+name: Willie Cauley-Stein
+	salary: 3704160.000000
+	number: 0
+	three pointers: 0
+	turn overs: 2
+	assists: 3
+	rebounds: 7
+	two pointers: 5
+name: De'Aaron Fox
+	salary: 4609200.000000
+	number: 5
+	three pointers: 1
+	turn overs: 2
+	assists: 4
+	rebounds: 3
+	two pointers: 4
+name: Harry Giles
+	salary: 1859400.000000
+	number: 20
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 2
+name: Bill Clinton
+	salary: 107000.000000
+	number: 19
+	three pointers: 3
+	turn overs: 5
+	assists: 6
+	rebounds: 1
+	two pointers: 7
+name: Buddy Heild
+	salary: 3675480.000000
+	number: 24
+	three pointers: 2
+	turn overs: 2
+	assists: 2
+	rebounds: 4
+	two pointers: 3
+name: Justin Jackson
+	salary: 2365560.000000
+	number: 25
+	three pointers: 1
+	turn overs: 1
+	assists: 1
+	rebounds: 3
+	two pointers: 2
+name: Kosta Koufos
+	salary: 8393000.000000
+	number: 41
+	three pointers: 0
+	turn overs: 0
+	assists: 1
+	rebounds: 7
+	two pointers: 2
+name: Skal Labissiere
+	salary: 1312611.000000
+	number: 7
+	three pointers: 0
+	turn overs: 4
+	assists: 1
+	rebounds: 5
+	two pointers: 3
+name: Frank MasonIII
+	salary: 1184385.000000
+	number: 10
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 2
+name: Zach Randolph
+	salary: 12307692.000000
+	number: 50
+	three pointers: 1
+	turn overs: 1
+	assists: 3
+	rebounds: 3
+	two pointers: 5
+name: Iman Shumpert
+	salary: 10337079.000000
+	number: 9
+	three pointers: 0
+	turn overs: 1
+	assists: 1
+	rebounds: 1
+	two pointers: 2
+name: Garret Temple
+	salary: 17.000000
+	number: 8000000
+	three pointers: 1
+	turn overs: 1
+	assists: 2
+	rebounds: 2
+	two pointers: 2
+Bearcat players: 
+
+name: Pearce Skinner
+	salary: 250000.000000
+	number: 1
+	goals: 12
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 3
+	assist: 7
+name: Noah Lawrence
+	salary: 240000.000000
+	number: 2
+	goals: 4
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 2
+	assist: 10
+name: Darryn Commissong
+	salary: 270000.000000
+	number: 3
+	goals: 19
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 2
+name: Mads Tranberg
+	salary: 100000.000000
+	number: 4
+	goals: 0
+	fouls: 4
+	red cards: 1
+	yellow cards: 1
+	offside: 10
+	assist: 1
+name: Sean Clarke
+	salary: 100000.000000
+	number: 5
+	goals: 6
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 8
+	assist: 9
+name: Peyton Mowery
+	salary: 400000.000000
+	number: 6
+	goals: 20
+	fouls: 2
+	red cards: 1
+	yellow cards: 0
+	offside: 12
+	assist: 13
+name: Elias Helbig
+	salary: 350000.000000
+	number: 7
+	goals: 15
+	fouls: 0
+	red cards: 2
+	yellow cards: 1
+	offside: 10
+	assist: 11
+name: Cameron Panley
+	salary: 100000.000000
+	number: 8
+	goals: 4
+	fouls: 4
+	red cards: 2
+	yellow cards: 1
+	offside: 10
+	assist: 4
+name: Mohamed Elmardi
+	salary: 260000.000000
+	number: 9
+	goals: 10
+	fouls: 3
+	red cards: 1
+	yellow cards: 1
+	offside: 7
+	assist: 5
+name: Daniel Oginni
+	salary: 260000.000000
+	number: 10
+	goals: 8
+	fouls: 3
+	red cards: 2
+	yellow cards: 0
+	offside: 2
+	assist: 9
+name: Austin Smythe
+	salary: 260000.000000
+	number: 11
+	goals: 8
+	fouls: 2
+	red cards: 0
+	yellow cards: 2
+	offside: 2
+	assist: 9
+name: Ryan Melink
+	salary: 265000.000000
+	number: 12
+	goals: 14
+	fouls: 2
+	red cards: 0
+	yellow cards: 1
+	offside: 4
+	assist: 3
+name: Logan Ecklar
+	salary: 350000.000000
+	number: 13
+	goals: 27
+	fouls: 2
+	red cards: 0
+	yellow cards: 0
+	offside: 15
+	assist: 18
+name: Mason Volker
+	salary: 240000.000000
+	number: 13
+	goals: 8
+	fouls: 3
+	red cards: 0
+	yellow cards: 2
+	offside: 10
+	assist: 0
+name: Geoffnet die Tur
+	salary: 50000.000000
+	number: 91
+	goals: 4
+	fouls: 8
+	red cards: 1
+	yellow cards: 4
+	offside: 5
+	assist: 4

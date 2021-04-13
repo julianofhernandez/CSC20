@@ -1,11 +1,24 @@
+//***********************************************
+//author: Julian Hernandez
+//date: 2/12/21
+//title: Assignment 2
+//description: Soccer and Basketball teams
+//*************************************************
 import java.util.*;
 import java.io.*;
 
+/**
+* SoccerTeam is a subclass of Team that is specifically setup to hold SoccerPlayers
+* 
+* @author Julian Hernandez
+* @version v1.0
+*/
 public class SoccerTeam extends Team {
-    // private ArrayLisst<SoccerPlayers> soccerTeam;
-    /* +constructor()	Reads the info for the players from a file and creates an object of 
+    /** +constructor()	Reads the info for the players from a file and creates an object of 
     SoccerPlayer and then stores it in the  arrayList called team. Then call super constructor 
-    and pass team name and array list.*/
+    and pass team name and array list.
+    * @param fileName The file to pull soccer players from
+    */
     public SoccerTeam(String fileName) throws FileNotFoundException {
         super("", new ArrayList<Player>());
         File fileObj = new File(fileName);
@@ -13,25 +26,31 @@ public class SoccerTeam extends Team {
         String teamName = reader.next();
         this.setTeamName(teamName);
         while (reader.hasNext()) {
-            String firstName = reader.next();
-            String lastName = reader.next();
-            String name = firstName + " " + lastName;
-            int salary = Integer.parseInt(reader.next());
-            int number = Integer.parseInt(reader.next());
-            int fouls = Integer.parseInt(reader.next());
-            int goals = Integer.parseInt(reader.next());
-            int redCard = Integer.parseInt(reader.next());
-            int yellowCard = Integer.parseInt(reader.next());
-            int offside = Integer.parseInt(reader.next());
-            int assist = Integer.parseInt(reader.next());
-            SoccerPlayer addingPlayer = new SoccerPlayer(
-                name, salary, number, fouls, goals, redCard, yellowCard, offside, assist
-            );
-            this.add(addingPlayer);
+            try {
+                String firstName = reader.next();
+                String lastName = reader.next();
+                String name = firstName + " " + lastName;
+                int salary = Integer.parseInt(reader.next());
+                int number = Integer.parseInt(reader.next());
+                int fouls = Integer.parseInt(reader.next());
+                int goals = Integer.parseInt(reader.next());
+                int redCard = Integer.parseInt(reader.next());
+                int yellowCard = Integer.parseInt(reader.next());
+                int offside = Integer.parseInt(reader.next());
+                int assist = Integer.parseInt(reader.next());
+                SoccerPlayer addingPlayer = new SoccerPlayer(
+                    name, salary, number, fouls, goals, redCard, yellowCard, offside, assist
+                );
+                this.add(addingPlayer);
+            } catch (Exception e) {
+                System.out.println("Failed to create player from file, please make sure it is formatted correctly");
+            }
         }
     }
 
-    /* +add(Object o) */
+    /** +add(Object o) 
+     * @param o Object to compare against
+    */
     public void add(Object o) {
         if (o instanceof SoccerPlayer) {
             super.add(o);
@@ -40,9 +59,11 @@ public class SoccerTeam extends Team {
         }
     }
 
-    /* +add(Object o, int pos)	Checks that object is an instance of SoccerPlayer and calls add method 
-    of superclass. 
-    Adds the object at the given position */
+    /** +add(Object o, int pos)	Checks that object is an instance of SoccerPlayer and calls add method 
+    of superclass. Adds the object at the given position
+    * @param o Object to add
+    * @param index Index to add object o at
+    */
     public void add(Object o, int index) {
         if (o instanceof SoccerPlayer) {
             super.add(o, index);
@@ -51,7 +72,9 @@ public class SoccerTeam extends Team {
         }
     }
     
-    /* +selectTheBest()	Return the player with the most goals */
+    /** +selectTheBest()	Return the player with the most goals 
+    * @return the Soccer player with the highest score
+    */
     public SoccerPlayer selectTheBest() {
         // Loops through the players to find the one with the highest score
         int highestIndex = 0;
@@ -69,25 +92,9 @@ public class SoccerTeam extends Team {
         return bestPlayer;
     }
 
-    /* +selectTheWorst()	Return the player with the most goals */
-    public SoccerPlayer selectTheWorst() {
-        // Loops through the players to find the one with the lowest score
-        int lowestIndex = 0;
-        SoccerPlayer player0 = (SoccerPlayer)this.getTeam().get(lowestIndex);
-        int lowest = player0.getGoals();
-        for (int i=0; i>this.getTeam().size(); i++) {
-            SoccerPlayer player = (SoccerPlayer)this.getTeam().get(i);
-            // Check if this player has a lower score
-            if (player.getGoals() > lowest) {
-                lowest = player.getGoals();
-                lowestIndex = i;
-            }
-        }
-        SoccerPlayer bestPlayer = (SoccerPlayer)this.getTeam().get(lowest);
-        return bestPlayer;
-    }
-
-    /* +selectMostRed	Returns the player with the most red card */
+    /** +selectMostRed	Returns the player with the most red card 
+     * @return The soccer player with the most red
+    */
     public SoccerPlayer selectMostRed() {
         // Loops through the players to find the one with the most red cards
         int highestIndex = 0;

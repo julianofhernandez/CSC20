@@ -1,0 +1,13 @@
+General Mills,3,yogurt
+Jiffy Mix,10,corn
+Ghirardelli,2,flour
+Jiffy Mix,10,sugar
+Nestle,1,cereals
+JBS,5,poultry
+Lactalis,8,cheese
+Ghirardelli,2,sugar
+JBS,5,pork
+General Mills,3,spices
+Tyson Foods,4,seasoned meats
+Mars,6,crunchy vitamins
+Cargill,7,eggs
