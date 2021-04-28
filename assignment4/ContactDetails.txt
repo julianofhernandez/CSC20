@@ -1,0 +1,15 @@
+Bogdan,Bogdanovic,8976786543,4098762541,bogdanBogdanovic@abc.com
+Bruno,Cabocio,7268725426,7653627890,brunoCabocio@xyz.com
+Vince,Carter,5674873628,8746539393,vinceCarter@gmail.com
+Willie,Cauley,8765635624,-,willieCauley@acb.com
+De'Aaron,Fox,6753452652,6085542642,deAaronFox@xyz.com
+Harry,Giles,3246536753,-,harryGiles@gmail.com
+Nigel,Hayes,-,6756453456,nigelHayes@abc.com
+Buddy,Hield,4536478987,1235437845,buddyHield@gmail.com
+Justin,Jackson,-,4563454764,justinJackson@abc.com
+Kosta,Koufos,1234536745,7645374563,kostaKoufos@gmail.com
+Skal,Labissiere,2345673418,7643678363,skalLabissiere@xyz.com
+Frank,MasonIII,2344562789,1764535290,frankMasonIII@gha.com
+Zach,Randolph,-,4543647839,zachRandolph@abc.com
+Iman,Shumpert,9087676352,3456472894,imanShumpert@gmail.com
+Garret,Temple,5236476540,9087632342,garretTemple@gmail.com
