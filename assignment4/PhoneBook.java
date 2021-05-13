@@ -79,7 +79,7 @@ public class PhoneBook {
         // Search contact by last name using binary search. 
         // return true if contact is found else false
         int lowIndex = 0;
-        int highIndex = this.contacts.size();
+        int highIndex = this.contacts.size()-1;
         int middleIndex = (lowIndex + highIndex)/2;
 
         while (lowIndex <= highIndex) {
